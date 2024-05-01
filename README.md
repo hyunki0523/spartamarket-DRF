@@ -61,3 +61,24 @@ wheel                         | 0.41.2
 ## * Use
 
 Post Man 이미지 참고
+
+![1](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/6f08d9ff-c3b3-447e-8480-491e46d88f36)
+![2](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/c4da42d3-ec67-46fd-8c25-a0d9d6f84157)
+![3](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/45d4bd58-ae39-4bbc-aa69-6619fd08bb53)
+![4](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/c290bbff-3c1b-4cc4-aa7d-65ce6986df14)
+![5](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/0e0e6d65-6744-42cc-bf05-590a85ff4ad4)
+![6](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/56f75ce9-2b99-4099-b689-d8a33f31baf4)
+![7](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/be278821-704e-49a8-ba30-4bf8e0b8e8fb)
+![8](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/a1201afb-44d4-43d1-9cdb-d11df9ec2ef7)
+![9](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/2630e252-78da-46a4-a8d8-79cbc2b67ab1)
+![10](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/bb6efe95-be0c-47d3-8063-d5cb3650bb64)
+![11](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/25f30128-c1bc-4edc-9f74-e84ab55c79bd)
+![12](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/be4f709c-e983-446a-b669-495132c79f30)
+![13](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/27ad3e5b-7673-4312-bdca-8b4c398705ff)
+![14](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/9ffab30a-227a-44b4-84cf-e848651a9f99)
+![15](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/4651d3be-05e4-4e61-86ba-ffe5f23bbf6c)
+![16](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/bbc5b9c3-fee8-4bf1-8708-89d22fe95bd0)
+![17](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/ea6983ac-372d-48a8-80da-e7110a82be84)
+![18](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/82b6bb4d-056c-429a-a65c-d547db4109fb)
+![19](https://github.com/hyunki0523/spartamarket-DRF/assets/159873023/e8d826f8-9f14-43dd-b746-9eb3f5dba661)
+
