@@ -17,12 +17,11 @@ class profileAPIView(APIView):
         return Response(serializer.data)
 
     def put(self, request, pk):
-        if Product.author == request.pk:
-            user = get_object_or_404(User, pk=pk)
-            serializer = UserSerializer(user, data=request.data, partial=True)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(serializer.data)
+        user = get_object_or_404(User, pk=pk)
+        serializer = UserSerializer(user, data=request.data, partial=True)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
 
 
 # 회원가입

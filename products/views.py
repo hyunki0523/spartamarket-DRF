@@ -25,6 +25,7 @@ class ProducCreateAPIView(APIView):
 class ProductDetailAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
+
     def get_object(self, pk):
         return get_object_or_404(Product, pk=pk)
 
@@ -34,6 +35,8 @@ class ProductDetailAPIView(APIView):
         return Response(serializer.data)
 
     def put(self, request, pk):
+        if Product.author != request.user:
+            return Response({"error": "Unauthorized"}, status=403)
         product = self.get_object(pk)
         serializer = ProductSerializer(product, data=request.data, partial=True)
         if serializer.is_valid(raise_exception=True):
@@ -41,7 +44,8 @@ class ProductDetailAPIView(APIView):
             return Response(serializer.data)
 
     def delete(self, request, pk):
-        product = get_object_or_404(Product, pk=pk)
-        product.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        if Product.author == request.pk:
+            product = get_object_or_404(Product, pk=pk)
+            product.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
 
