@@ -11,8 +11,9 @@ class Product(models.Model):
 
     name = models.CharField(max_length=100)
     price = models.PositiveIntegerField()
-    quantity = models.PositiveIntegerField()
+    image = models.ImageField()
     category = models.CharField(max_length=1, choices=CATEGORY_CHOICES)
+
 
     def __str__(self):
         return self.name

@@ -4,14 +4,17 @@ from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from .models import Product
 from .serializers import ProductSerializer
+from rest_framework.permissions import IsAuthenticated
 
 
 class ProductListAPIView(APIView):
+
     def get(self, request):
         articles = Product.objects.all()
         serializer = ProductSerializer(articles, many=True)
         return Response(serializer.data)
 
+    permission_classes = [IsAuthenticated]
     def post(self, request):
         serializer = ProductSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
@@ -20,6 +23,8 @@ class ProductListAPIView(APIView):
 
 
 class ProductDetailAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
     def get_object(self, pk):
         return get_object_or_404(Product, pk=pk)
 
@@ -39,5 +44,4 @@ class ProductDetailAPIView(APIView):
         product = self.get_object(self, pk)
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
 
