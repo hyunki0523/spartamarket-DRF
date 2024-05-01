@@ -6,13 +6,13 @@ from .models import Product
 from .serializers import ProductSerializer
 from rest_framework.permissions import IsAuthenticated
 
-
 class ProductListAPIView(APIView):
-
     def get(self, request):
         articles = Product.objects.all()
         serializer = ProductSerializer(articles, many=True)
         return Response(serializer.data)
+
+class ProducCreateAPIView(APIView):
 
     permission_classes = [IsAuthenticated]
     def post(self, request):
@@ -41,7 +41,7 @@ class ProductDetailAPIView(APIView):
             return Response(serializer.data)
 
     def delete(self, request, pk):
-        product = self.get_object(self, pk)
+        product = get_object_or_404(Product, pk=pk)
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 

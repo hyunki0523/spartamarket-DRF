@@ -9,10 +9,12 @@ class Product(models.Model):
         ("O", "Other"),
     )
 
-    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
     price = models.PositiveIntegerField()
-    image = models.ImageField()
+    image = models.ImageField(blank=True)
+    content = models.TextField()
     category = models.CharField(max_length=1, choices=CATEGORY_CHOICES)
+    author = models.ForeignKey('accounts.User', on_delete=models.CASCADE)
 
 
     def __str__(self):
